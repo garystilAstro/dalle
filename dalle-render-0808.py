@@ -1,6 +1,10 @@
 from flask import Flask, render_template, jsonify, request
 from openai import OpenAI, OpenAIError
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -11,7 +15,7 @@ client = OpenAI(api_key=api_key)
 
 @app.route('/')
 def index():
-    return render_template('dalle-render-0808.html')
+    return render_template('dalle-local-menu-css-0720.html')
 
 @app.route('/generate_image', methods=['POST'])
 def generate_image():
@@ -20,19 +24,20 @@ def generate_image():
         data = request.get_json()
         prompt = data.get('prompt', '')
         size = data.get('size', '1024x1024')
-        quality = data.get('quality', 'standard')
+        model = data.get('model', 'dall-e-3')  # Model selection
+        quality = data.get('quality', 'standard')  # Quality option
+        style = data.get('style', 'vivid')  # Style option
         n = int(data.get('n', 1))
 
-        # Generate images using DALL-E model
+        # Generate images using the selected DALL-E model
         image_urls = []
         for _ in range(n):
             response = client.images.generate(
-                model="dall-e-3",
-                prompt=prompt,
+                model=model,
+                prompt=f"{prompt} in {style} style",  # Include style in prompt
                 size=size,
                 quality=quality,
             )
-            # Extract image URL from response
             image_url = response.data[0].url
             image_urls.append(image_url)
 
@@ -43,5 +48,4 @@ def generate_image():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
