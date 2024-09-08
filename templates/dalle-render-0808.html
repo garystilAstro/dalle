@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miro image generator</title>
-    <link rel="stylesheet" href="static/dalle-render-0808.css">
+    <title>DALL-E Image Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dalle-local-menu.css') }}">
 </head>
 <body>
-    <h1>miro image generator</h1>
+    <h1>DALL-E Image Generator</h1>
     <form id="image-form">
         <div class="form-group">
-            <label for="prompt">enter your prompt:</label>
-            <input type="text" id="prompt" name="prompt" placeholder="type your message..." required>
+            <label for="prompt">Enter your prompt:</label>
+            <input type="text" id="prompt" name="prompt" placeholder="Type your message..." required>
         </div>
         <div class="form-group">
-            <label for="size">size:</label>
+            <label for="size">Size:</label>
             <select id="size" name="size">
                 <option value="1024x1024">1024x1024</option>
                 <option value="1024x1792">1024x1792</option>
@@ -22,15 +22,32 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="quality">quality:</label>
-            <input type="text" id="quality" name="quality" value="standard" placeholder="e.g., high, standard, low">
+            <label for="model">Model:</label>
+            <select id="model" name="model">
+                <option value="dall-e-3" selected>DALL-E 3</option>
+                <option value="dall-e-2">DALL-E 2</option>
+            </select>
         </div>
         <div class="form-group">
-            <label for="n">number of images:</label>
+            <label for="quality">Quality:</label>
+            <select id="quality" name="quality">
+                <option value="standard" selected>Standard</option>
+                <option value="high-definition">High Definition</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="style">Style:</label>
+            <select id="style" name="style">
+                <option value="vivid" selected>Vivid</option>
+                <option value="natural">Natural</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="n">Number of images:</label>
             <input type="number" id="n" name="n" value="1" min="1" max="10" step="1">
         </div>
         <div class="form-group">
-            <button type="submit">generate image</button>
+            <button type="submit">Generate Image</button>
         </div>
     </form>
     <div class="image-container" id="image-container">
@@ -45,7 +62,9 @@
             event.preventDefault();
             const prompt = document.getElementById('prompt').value.trim();
             const size = document.getElementById('size').value.trim();
+            const model = document.getElementById('model').value.trim();
             const quality = document.getElementById('quality').value.trim();
+            const style = document.getElementById('style').value.trim();
             const n = document.getElementById('n').value.trim();
 
             try {
@@ -57,7 +76,9 @@
                     body: JSON.stringify({
                         prompt: prompt,
                         size: size,
+                        model: model,
                         quality: quality,
+                        style: style,
                         n: parseInt(n)
                     })
                 });
@@ -82,7 +103,7 @@
 
             } catch (error) {
                 console.error('Error generating image:', error);
-                alert(`Error generating image: ${error.message}`);
+                alert('Error generating image. Please try again later.');
             }
         });
     </script>
