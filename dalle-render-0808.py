@@ -15,7 +15,7 @@ client = OpenAI(api_key=api_key)
 
 @app.route('/')
 def index():
-    return render_template('dalle-local-menu-css-0720.html')
+    return render_template('dalle-render-0808.html.html')
 
 @app.route('/generate_image', methods=['POST'])
 def generate_image():
