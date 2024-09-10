@@ -23,7 +23,7 @@ form {
 }
 
 .form-group label {
-    flex: 1;
+    width: 150px; /* Fixed width for labels to align input boxes */
     margin-right: 10px;
     text-align: right;
     font-size: 16px;
@@ -32,21 +32,20 @@ form {
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group select {
-    flex: 2;
+    flex: 1; /* Ensure input boxes take remaining space */
     padding: 10px;
     font-size: 16px;
-    font-family: 'Roboto Mono', monospace; /* Ensure font is applied to input and select */
+    font-family: 'Roboto Mono', monospace;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .form-group select option {
-    font-family: 'Roboto Mono', monospace; /* Ensure font is applied to options */
-    font-size: 16px; /* Apply font size to options */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
 }
 
 .form-group button {
-    flex: 1;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -54,6 +53,7 @@ form {
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    margin-left: 160px; /* Align button with input boxes */
 }
 
 .form-group button:hover {
