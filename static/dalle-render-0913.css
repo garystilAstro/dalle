@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 150px; /* Fixed width for labels to align input boxes */
+    margin-right: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.form-group textarea,
+.form-group input[type="number"],
+.form-group select {
+    flex: 1; /* Ensure input boxes take remaining space */
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.form-group textarea {
+    min-height: 100px; /* Minimum height for the textarea */
+    overflow: auto; /* Show scrollbars if needed */
+}
+
+.form-group select option {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 160px; /* Align button with input boxes */
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.generated-image {
+    max-width: 100%;
+    height: auto;
+}
