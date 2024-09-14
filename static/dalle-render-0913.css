@@ -6,23 +6,20 @@ body {
     box-sizing: border-box;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.main-container {
+    max-width: 600px; /* Consistent width with the form */
+    margin: auto;
+    padding: 0 20px; /* Optional padding for aesthetics */
 }
 
 h1 {
     font-size: 20px;
-}
-
-.form-container {
-    max-width: 600px;
-    margin: auto;
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space between header and form */
 }
 
 form {
-    width: 100%; /* Ensure the form takes up the full width of its container */
+    width: 100%; /* Ensure the form takes the full width of its container */
 }
 
 .form-group {
