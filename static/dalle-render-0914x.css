@@ -54,7 +54,7 @@ form {
 }
 
 #number-of-images {
-    height: 10px; /* Matches the height of other inputs and selects */
+    height: 0px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
@@ -63,14 +63,14 @@ form {
 }
 
 .form-group button {
-    padding: 20px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 160px; /* Align button with input fields */
+    margin-left: 170px; /* Align button with input fields */
 }
 
 .form-group button:hover {
