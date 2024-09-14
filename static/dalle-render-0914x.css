@@ -53,6 +53,7 @@ form {
 }
 
 .form-group textarea {
+    flex: 1;
     min-height: 60px; /* Minimum height for textarea */
     padding: 10px; /* Padding inside the textarea */
     font-size: 16px; /* Font size inside the textarea */
