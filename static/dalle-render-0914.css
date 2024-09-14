@@ -5,14 +5,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #2D2D2D; /* Default text color for the body */
-
-
 }
 
 .main-container {
     max-width: 600px; /* Consistent width with the form */
     margin: auto;
-    padding:  20px /* Optional padding for aesthetics */
+    padding: 20px; /* Optional padding for aesthetics */
 }
 
 h1 {
@@ -39,21 +37,30 @@ form {
     font-size: 16px;
 }
 
-.form-group textarea,
 .form-group input[type="number"],
+.form-group input[type="text"],
+.form-group input[type="email"],
 .form-group select {
-    flex: 1; /* Ensure input boxes take remaining space */
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical; /* Allow vertical resizing of the textarea */
+    flex: 1; /* Make input fields flexible to fill available space */
+    padding: 10px; /* Padding inside the input field */
+    font-size: 16px; /* Font size inside the input field */
+    font-family: 'Roboto Mono', monospace; /* Consistent font */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    height: 40px; /* Height to match other inputs */
+    box-sizing: border-box; /* Include padding and border in height */
 }
 
 .form-group textarea {
-    min-height: 60px; /* Minimum height for the textarea */
-    overflow: auto; /* Show scrollbars if needed */
+    min-height: 60px; /* Minimum height for textarea */
+    padding: 10px; /* Padding inside the textarea */
+    font-size: 16px; /* Font size inside the textarea */
+    font-family: 'Roboto Mono', monospace; /* Consistent font */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    resize: vertical; /* Allow vertical resizing */
 }
 
 .form-group select option {
