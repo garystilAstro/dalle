@@ -32,14 +32,13 @@ form {
 .form-group {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .form-group label {
     width: 150px;
     text-align: right;
     font-size: 16px;
-     padding: 0px 0px 10px;;
 }
 
 .form-group input[type="number"],
