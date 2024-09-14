@@ -4,76 +4,55 @@ body {
     margin: 20px;
     padding: 0;
     box-sizing: border-box;
-    color: #2D2D2D; /* Default text color for the body */
+    color: #2D2D2D;
 }
 
 .main-container {
-    max-width: 600px; /* Consistent width with the form */
+    max-width: 600px;
     margin: auto;
-    padding: 20px; /* Optional padding for aesthetics */
+    padding: 20px;
 }
 
 h1 {
-    font-size: 20px;
-    text-align: left; /* Align header text to the left */
-    margin: 0 0 20px 0; /* Space between header and form, align with container */
-    padding-left: 170px; /* Optional padding to align with form content */
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 20px;
+    padding-left: 170px; /* Retain left margin alignment */
 }
 
 form {
-    width: 100%; /* Ensure the form takes the full width of its container */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 10px;
 }
 
 .form-group label {
-    width: 150px; /* Fixed width for labels to align input boxes */
-    margin-right: 10px;
+    width: 150px;
     text-align: right;
     font-size: 16px;
 }
 
 .form-group input[type="number"],
-.form-group input[type="text"],
-.form-group input[type="email"],
+.form-group textarea,
 .form-group select {
-    flex: 1; /* Make input fields flexible to fill available space */
-    padding: 10px; /* Padding inside the input field */
-    font-size: 16px; /* Font size inside the input field */
-    font-family: 'Roboto Mono', monospace; /* Consistent font */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    height: 40px; /* Height to match other inputs */
-    box-sizing: border-box; /* Include padding and border in height */
-}
-
-#number-of-images {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for number of images box */
-    border: 1px solid #ccc; /* Consistent border */
-    border-radius: 4px; /* Optional rounded corners */
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
 }
 
 .form-group textarea {
-    flex: 1;
-    min-height: 60px; /* Minimum height for textarea */
-    padding: 10px; /* Padding inside the textarea */
-    font-size: 16px; /* Font size inside the textarea */
-    font-family: 'Roboto Mono', monospace; /* Consistent font */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    resize: vertical; /* Allow vertical resizing */
-}
-
-.form-group select option {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    resize: vertical;
+    min-height: 80px;
 }
 
 .form-group button {
@@ -84,17 +63,21 @@ form {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 160px; /* Align button with input boxes */
+    margin-left: 160px; /* Align button with input fields */
 }
 
 .form-group button:hover {
     background-color: #0056b3;
 }
 
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
 .image-container {
-    max-width: 600px;
-    margin: auto;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
