@@ -52,6 +52,12 @@ form {
     box-sizing: border-box; /* Include padding and border in height */
 }
 
+#number-of-images {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for number of images box */
+    border: 1px solid #ccc; /* Consistent border */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
 .form-group textarea {
     flex: 1;
     min-height: 60px; /* Minimum height for textarea */
