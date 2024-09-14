@@ -54,7 +54,7 @@ form {
 }
 
 #number-of-images {
-    height: 10px; /* Matches the height of other inputs and selects */
+    height: 20px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
