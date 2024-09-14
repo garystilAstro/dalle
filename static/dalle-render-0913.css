@@ -10,16 +10,12 @@ body {
     max-width: 600px; /* Consistent width with the form */
     margin: auto;
     padding: 0 20px; /* Optional padding for aesthetics */
-    position: relative; /* To align header with form */
 }
 
 h1 {
     font-size: 20px;
-    margin: 0; /* Remove default margin */
-    padding-bottom: 20px; /* Space between header and form */
-    position: absolute;
-    left: 0; /* Align left edge of the header with the form */
-    top: -30px; /* Position it above the form (adjust as needed) */
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space between header and form */
 }
 
 form {
@@ -72,4 +68,21 @@ form {
     margin-left: 160px; /* Align button with input boxes */
 }
 
-.form-group button:
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.generated-image {
+    max-width: 100%;
+    height: auto;
+}
