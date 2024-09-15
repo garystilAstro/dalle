@@ -22,7 +22,6 @@ h1 {
     font-weight: 100; /* Thin weight */
 }
 
-
 form {
     display: flex;
     flex-direction: column;
