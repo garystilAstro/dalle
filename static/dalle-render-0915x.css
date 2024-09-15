@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     margin: 0px;
-    padding: 0;
+    padding: 8;
     box-sizing: border-box;
     color: #2D2D2D;
 }
@@ -54,7 +54,7 @@ form {
 }
 
 #number-of-images {
-    height: 0px; /* Matches the height of other inputs and selects */
+    height: 20px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
