@@ -18,7 +18,7 @@ h1 {
     color: #2D2D2D;
     text-align: left;
     margin: 0 20 0 30px;
-    padding-left: 243px;
+    padding-left: 248px;
     font-weight: 100; /* Thin weight */
 }
 
@@ -53,12 +53,12 @@ form {
 }
 
 #number-of-images {
-    height: 24px; /* Matches the height of other inputs and selects */
+    height: 0px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 60px;
+    min-height: 40px;
 }
 
 .form-group button {
@@ -69,7 +69,7 @@ form {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 164px; /* Align button with input fields */
+    margin-left: 156px; /* Align button with input fields */
 }
 
 .form-group button:hover {
