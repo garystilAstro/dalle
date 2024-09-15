@@ -10,7 +10,7 @@ body {
 .main-container {
     max-width: 600px;
     margin: auto;
-    padding: 0px;
+    padding: 8px;
 }
 
 h1 {
@@ -45,7 +45,7 @@ form {
 .form-group textarea,
 .form-group select {
     flex: 1;
-    padding: 0px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -54,12 +54,12 @@ form {
 }
 
 #number-of-images {
-    height: 26px; /* Matches the height of other inputs and selects */
+    height: 30px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 40px;
+    min-height: 60px;
 }
 
 .form-group button {
