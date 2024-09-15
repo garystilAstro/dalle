@@ -14,11 +14,11 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 18px;
     color: #2D2D2D;
     text-align: left;
     margin: 0 0 20px;
-    padding-left: 205px;
+    padding-left: 200px;
     font-weight: 100; /* Thin weight */
 }
 
@@ -32,13 +32,13 @@ form {
 .form-group {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .form-group label {
     width: 150px;
     text-align: right;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-group input[type="number"],
@@ -59,7 +59,7 @@ form {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 60px;
+    min-height: 50px;
 }
 
 .form-group button {
