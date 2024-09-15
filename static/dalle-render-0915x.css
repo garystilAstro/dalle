@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     margin: 0px;
-    padding: 8;
+    padding: 16;
     box-sizing: border-box;
     color: #2D2D2D;
 }
@@ -26,13 +26,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
 }
 
 .form-group label {
@@ -54,7 +54,7 @@ form {
 }
 
 #number-of-images {
-    height: 20px; /* Matches the height of other inputs and selects */
+    height: 26px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
