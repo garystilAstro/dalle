@@ -26,13 +26,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap:20 px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20 px;
 }
 
 .form-group label {
@@ -50,7 +50,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 16px; /* Ensures all inputs, including selects, have the same height */
+    height: 24px; /* Ensures all inputs, including selects, have the same height */
 }
 
 #number-of-images {
