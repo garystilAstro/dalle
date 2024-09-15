@@ -10,11 +10,11 @@ body {
 .main-container {
     max-width: 600px;
     margin: auto;
-    padding: 16px;
+    padding: 8px;
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 16px;
     color: #2D2D2D;
     text-align: left;
     margin: 0 0 16px;
@@ -26,7 +26,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .form-group {
@@ -45,7 +45,7 @@ form {
 .form-group textarea,
 .form-group select {
     flex: 1;
-    padding: 16px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
