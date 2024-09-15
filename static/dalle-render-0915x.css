@@ -69,7 +69,7 @@ form {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 156px; /* Align button with input fields */
+    margin-left: 160px; /* Align button with input fields */
 }
 
 .form-group button:hover {
