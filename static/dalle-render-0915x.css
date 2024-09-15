@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     margin: 16px;
-    padding: 20;
+    padding: 24;
     box-sizing: border-box;
     color: #2D2D2D;
 }
@@ -25,13 +25,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap:40 px;
+    gap:40px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 40 px;
+    gap: 40px;
 }
 
 .form-group label {
