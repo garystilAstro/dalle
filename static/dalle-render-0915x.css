@@ -14,11 +14,11 @@ body {
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 18px;
     color: #2D2D2D;
     text-align: left;
-    margin: 0 0 0px;
-    padding-left: 200px;
+    margin: 0 20 0px;
+    padding-left: 220px;
     font-weight: 100; /* Thin weight */
 }
 
@@ -26,13 +26,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
 }
 
 .form-group label {
