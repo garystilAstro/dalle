@@ -32,7 +32,7 @@ form {
 .form-group {
     display: flex;
     align-items: center;
-    gap: 20 px;
+    gap: 40 px;
 }
 
 .form-group label {
