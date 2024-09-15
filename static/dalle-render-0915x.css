@@ -25,13 +25,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:14px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
 
 .form-group label {
@@ -53,7 +53,7 @@ form {
 }
 
 #number-of-images {
-    height: 20px; /* Matches the height of other inputs and selects */
+    height: 10px; /* Matches the height of other inputs and selects */
 }
 
 .form-group textarea {
