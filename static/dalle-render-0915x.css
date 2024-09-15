@@ -25,13 +25,13 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap:30px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .form-group label {
