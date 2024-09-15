@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
-    margin: 20px;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
     color: #2D2D2D;
@@ -10,14 +10,14 @@ body {
 .main-container {
     max-width: 600px;
     margin: auto;
-    padding: 8px;
+    padding: 0px;
 }
 
 h1 {
     font-size: 16px;
     color: #2D2D2D;
     text-align: left;
-    margin: 0 0 16px;
+    margin: 0 0 0px;
     padding-left: 200px;
     font-weight: 100; /* Thin weight */
 }
@@ -45,12 +45,12 @@ form {
 .form-group textarea,
 .form-group select {
     flex: 1;
-    padding: 10px;
+    padding: 0px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 24px; /* Ensures all inputs, including selects, have the same height */
+    height: 16px; /* Ensures all inputs, including selects, have the same height */
 }
 
 #number-of-images {
@@ -59,7 +59,7 @@ form {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 50px;
+    min-height: 40px;
 }
 
 .form-group button {
