@@ -60,7 +60,7 @@ form {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 40px;
+    min-height: 30px;
 }
 
 .form-group button {
