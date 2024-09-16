@@ -20,6 +20,7 @@ h1 {
     margin: 0 0 0 30px;
     padding-left: 248px;
     font-weight: 100; /* Thin weight */
+    gap: 20px;
 }
 
 form {
