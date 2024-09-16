@@ -17,7 +17,7 @@ h1 {
     font-size: 18px;
     color: #2D2D2D;
     text-align: left;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
     padding-left: 248px;
     font-weight: 100; /* Thin weight */
     gap: 120px;
@@ -55,12 +55,12 @@ form {
 
 #number-of-images {
    height: 24px; /* Matches the height of other inputs and selects */
-   padding: 20px;
+   padding: 5px;
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 30px;
+    min-height: 28px;
 }
 
 .form-group button {
