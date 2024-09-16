@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <title>chimpanda image generator</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dalle-render-0916.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dalle-render-0915x.css') }}">
 </head>
 <body>
     <div class="main-container">
@@ -62,10 +62,8 @@
 
         // Add an event listener to dynamically adjust the height
         promptInput.addEventListener('input', function () {
-            // Reset the height to auto first to recalculate
-            this.style.height = 'auto';
-            // Set the height based on scrollHeight so it adjusts to the content
-            this.style.height = this.scrollHeight + 'px';
+            this.style.height = 'auto';  // Reset height to auto
+            this.style.height = this.scrollHeight + 'px';  // Set height based on scrollHeight
         });
 
         const form = document.getElementById('image-form');
