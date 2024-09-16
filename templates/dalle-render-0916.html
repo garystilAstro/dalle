@@ -60,11 +60,16 @@
     <script>
     const promptInput = document.getElementById('prompt');
 
+const promptInput = document.getElementById('prompt');
+
 // Adjust the textarea height dynamically
 promptInput.addEventListener('input', function () {
-    this.style.height = 'auto';  // Reset the height
-    this.style.height = this.scrollHeight + 'px';  // Set height to accommodate all text
+    // Temporarily set height to auto to get the correct scrollHeight
+    this.style.height = 'auto'; 
+    // Set height to the scrollHeight to expand as needed
+    this.style.height = `${this.scrollHeight}px`;
 });
+
 
 
         const form = document.getElementById('image-form');
