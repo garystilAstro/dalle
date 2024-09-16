@@ -58,22 +58,14 @@
     </div>
 
     <script>
-    const promptInput = document.getElementById('prompt');
+    document.addEventListener('DOMContentLoaded', function() {
+        const promptInput = document.getElementById('prompt');
 
-const promptInput = document.getElementById('prompt');
-
-// Adjust the textarea height dynamically
-promptInput.addEventListener('input', function () {
-    // Temporarily set height to auto to get the correct scrollHeight
-    this.style.height = '40px';
- // Expand height if content exceeds current height
-  if (this.scrollHeight > this.clientHeight) {
-    this.style.height = `${this.scrollHeight}px`;
-  }
-});
-
-
-
+        // Adjust the textarea height dynamically
+        promptInput.addEventListener('input', function () {
+            this.style.height = 'auto'; // Temporarily set height to auto to calculate scrollHeight
+            this.style.height = `${this.scrollHeight}px`; // Set height based on scrollHeight
+        });
 
         const form = document.getElementById('image-form');
         const imageContainer = document.getElementById('image-container');
@@ -122,4 +114,10 @@ promptInput.addEventListener('input', function () {
                 });
 
             } catch (error) {
-                console.error('
+                console.error('Error generating images:', error);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
