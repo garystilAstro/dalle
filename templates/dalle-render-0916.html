@@ -65,9 +65,11 @@ const promptInput = document.getElementById('prompt');
 // Adjust the textarea height dynamically
 promptInput.addEventListener('input', function () {
     // Temporarily set height to auto to get the correct scrollHeight
-    this.style.height = 'auto';
-    // Set height to the scrollHeight to expand as needed
+    this.style.height = '40px';
+ // Expand height if content exceeds current height
+  if (this.scrollHeight > this.clientHeight) {
     this.style.height = `${this.scrollHeight}px`;
+  }
 });
 
 
