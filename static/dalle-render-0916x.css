@@ -64,6 +64,7 @@ textarea {
     padding: 8px;
     font-size: 14px;
     box-sizing: border-box; /* Ensure padding is included in height calculation */
+    overflow: hidden; /* Prevents scrollbar from appearing */
 }
 
 button {
