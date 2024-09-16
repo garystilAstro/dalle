@@ -59,13 +59,11 @@ form {
 
 textarea {
     resize: none; /* Prevent manual resizing */
-    overflow-y: hidden; /* Hide scrollbar until necessary */
-    height: 28px; /* Set initial height */
-    min-height: 28px; /* Minimum height when empty */
+    min-height: 40px; /* Set minimum height */
     line-height: 1.5; /* Ensures text appears comfortable */
     padding: 8px;
     font-size: 14px;
-    vertical-align: top; /* Align text at the top */
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
 }
 
 button {
