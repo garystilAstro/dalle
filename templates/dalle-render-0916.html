@@ -60,10 +60,10 @@
     <script>
         const promptInput = document.getElementById('prompt');
 
-        // Add an event listener to dynamically adjust the height
+        // Adjust the textarea height dynamically
         promptInput.addEventListener('input', function () {
-            this.style.height = 'auto';  // Reset height to auto
-            this.style.height = this.scrollHeight + 'px';  // Set height based on scrollHeight
+            this.style.height = 'auto';  // Reset the height
+            this.style.height = this.scrollHeight + 'px';  // Set height to accommodate all text
         });
 
         const form = document.getElementById('image-form');
@@ -113,10 +113,4 @@
                 });
 
             } catch (error) {
-                console.error('Error generating image:', error);
-                alert('Error generating image. Please try again later.');
-            }
-        });
-    </script>
-</body>
-</html>
+                console.error('
