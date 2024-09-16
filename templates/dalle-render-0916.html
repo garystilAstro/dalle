@@ -58,13 +58,14 @@
     </div>
 
     <script>
-        const promptInput = document.getElementById('prompt');
+    const promptInput = document.getElementById('prompt');
 
-        // Adjust the textarea height dynamically
-        promptInput.addEventListener('input', function () {
-            this.style.height = 'auto';  // Reset the height
-            this.style.height = this.scrollHeight + 'px';  // Set height to accommodate all text
-        });
+// Adjust the textarea height dynamically
+promptInput.addEventListener('input', function () {
+    this.style.height = 'auto';  // Reset the height
+    this.style.height = this.scrollHeight + 'px';  // Set height to accommodate all text
+});
+
 
         const form = document.getElementById('image-form');
         const imageContainer = document.getElementById('image-container');
