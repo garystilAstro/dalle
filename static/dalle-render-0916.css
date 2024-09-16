@@ -13,6 +13,8 @@ h1 {
 
 .form-group {
     margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 label {
