@@ -1,19 +1,6 @@
-/* Set the default height and other styles for the prompt input */
-#prompt {
-    width: 100%;
-    height: 28px; /* Default height */
-    max-height: 200px; /* Optional max height */
-    overflow-y: auto; /* Allows scrolling if max height is reached */
-    font-family: 'Roboto Mono', monospace;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: none; /* Prevents manual resizing */
-}
-
+/* Base styles for the form and layout */
 .main-container {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Roboto Mono', monospace;
@@ -34,7 +21,21 @@ label {
     margin-bottom: 5px;
 }
 
-input, select, textarea {
+/* Set the default height and dynamic resizing behavior for the prompt textarea */
+#prompt {
+    width: 100%;
+    height: 28px; /* Default height */
+    max-height: 200px; /* Optional max height for scrolling */
+    overflow-y: auto; /* Allows scrolling if max height is reached */
+    font-family: 'Roboto Mono', monospace;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none; /* Prevents manual resizing */
+}
+
+select, input, textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -42,6 +43,7 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
+/* Button styling */
 button {
     display: inline-block;
     padding: 10px 20px;
