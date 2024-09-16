@@ -71,7 +71,7 @@
             const model = document.getElementById('model').value.trim();
             const quality = document.getElementById('quality').value.trim();
             const style = document.getElementById('style').value.trim();
-            const n = document.getElementById('n').value.trim();
+            const n = document.getElementById('number-of-images').value.trim();
 
             try {
                 const response = await fetch('/generate_image', {
