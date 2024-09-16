@@ -53,8 +53,8 @@ form {
 }
 
 #number-of-images {
-    height: 0px; /* Matches the height of other inputs and selects */
-   padding-left: 20px;
+   height: 24px; /* Matches the height of other inputs and selects */
+   padding: 20px;
 }
 
 .form-group textarea {
