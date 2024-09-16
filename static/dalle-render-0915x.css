@@ -54,7 +54,7 @@ form {
 
 #number-of-images {
     height: 0px; /* Matches the height of other inputs and selects */
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .form-group textarea {
@@ -70,7 +70,7 @@ form {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 162px; /* Align button with input fields */
+    margin-left: 160px; /* Align button with input fields */
 }
 
 .form-group button:hover {
