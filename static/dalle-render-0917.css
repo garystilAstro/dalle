@@ -60,7 +60,7 @@ form {
 
 textarea {
     resize: none; /* Prevent manual resizing */
-    min-height: 40px; /* Set minimum height */
+    min-height: 50px; /* Set minimum height */
     line-height: 1.5; /* Ensures text appears comfortable */
     padding: 8px;
     font-size: 14px;
