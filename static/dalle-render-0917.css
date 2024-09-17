@@ -31,7 +31,6 @@ form {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 5px;
 }
 
 .form-group label {
