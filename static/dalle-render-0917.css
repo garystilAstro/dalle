@@ -31,6 +31,7 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 5px;
 }
 
 .form-group label {
@@ -42,7 +43,6 @@ form {
 .form-group input[type="number"],
 .form-group textarea,
 .form-group select {
-    flex: 1;
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
