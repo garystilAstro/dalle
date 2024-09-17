@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <title>chimpanda image generator</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dalle-render-0916x.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dalle-render-0917.css') }}">
 </head>
 <body>
     <div class="main-container">
@@ -44,15 +44,20 @@
                     <option value="natural">Natural</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="number-of-images"># images</label>
-                <input type="number" id="number-of-images" name="number-of-images" min="1" max="4" value="1">
-            </div>
-            <div class="form-group">
-                <button type="submit">generate image</button>
+
+              <div class="form-group">
+             <label for="number-of-images"># images</label>
+                <select id="number-of-images" name="number-of-images">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                </select>
             </div>
         </form>
     </div>
+
+    
     <div class="image-container" id="image-container">
         <!-- Images will be displayed here -->
     </div>
