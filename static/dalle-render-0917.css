@@ -75,7 +75,7 @@ button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 100px; /* Align button with input fields */
+    margin-left: 120px; /* Align button with input fields */
 }
 
 button:hover {
