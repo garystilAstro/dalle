@@ -30,7 +30,7 @@ form {
 .form-group {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .form-group label {
