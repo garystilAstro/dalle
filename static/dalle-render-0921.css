@@ -45,7 +45,7 @@ form {
 .form-group input[type="number"],
 .form-group textarea,
 .form-group select {
- width:120px;
+    width:140px;
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
