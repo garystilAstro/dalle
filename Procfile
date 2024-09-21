@@ -1,1 +1,1 @@
-web: python3 dalle-render-0917.py
+web: python3 render.py
