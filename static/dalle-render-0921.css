@@ -25,12 +25,15 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items:flex-end;
 }
 
 .form-group {
     display: flex;
+    justify-content:flex-end;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
+    width:100%;
 }
 
 .form-group label {
@@ -42,7 +45,7 @@ form {
 .form-group input[type="number"],
 .form-group textarea,
 .form-group select {
-    flex: 1;
+ width:120px;
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -59,15 +62,21 @@ form {
 
 textarea {
     resize: none; /* Prevent manual resizing */
+    width:100%;
     min-height: 70px; /* Set minimum height */
     line-height: 1.5; /* Ensures text appears comfortable */
     padding: 8px;
     font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box; /* Ensure padding is included in height calculation */
     overflow: hidden; /* Prevents scrollbar from appearing */
+    margin-bottom:10px;
 }
 
 button {
+    width: 120px;
     padding: 10px 14px;
     font-size: 14px;
     border: none;
@@ -75,7 +84,7 @@ button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    margin-left: 125px; /* Align button with input fields */
+    text-align:center;
 }
 
 button:hover {
